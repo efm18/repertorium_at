@@ -8,14 +8,15 @@ Ensure your data is in `.png` format and saved in the `data` directory within th
 
 - `data/Repertorium_Images_lyrics` for lyrics
 - `data/Repertorium_Images_music` for music
+- `data/Repertorium_Images_full` for aligned transcription
 
 ## Usage
 
-Once the data is placed in the corresponding folders, execute the command `.run/sh` with one of the following arguments, depending on the desired task:
+Once the data is placed in the corresponding folders, execute the command `.transcribe/sh` with one of the following arguments, depending on the desired task:
 
-- `./run.sh music` for transcribing only the files in the `Repertorium_Images_music` directory
-- `./run.sh lyrics` for transcribing only the files in the `Repertorium_Images_lyrics` directory
-- `./run.sh all` for transcribing the files in both directories and aligning them
+- `./transcribe.sh music` for transcribing only the files in the `Repertorium_Images_music` directory
+- `./transcribe.sh lyrics` for transcribing only the files in the `Repertorium_Images_lyrics` directory
+- `./transcribe.sh aligned` for transcribing the files in the `Repertorium_Images_full` directory
 
 ## Output
 
