@@ -7,4 +7,7 @@ DS_CONFIG = {
     "lyrics": {
         "images": "data/Repertorium_Images_lyrics"
     },
+    "aligned": {
+        "images": "data/Repertorium_Images_full"
+    },
 }

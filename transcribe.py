@@ -12,6 +12,7 @@ from torch.utils.data import DataLoader
 from data.config import DS_CONFIG
 from my_utils.dataset import CTCDataset
 from models.model import CTCTrainedCRNN
+from models.model import LightningE2EModelUnfolding
 
 # Seed
 random.seed(42)
@@ -51,9 +52,14 @@ def test(
     )  # prefetch_factor=2
 
     # Model
-    model = CTCTrainedCRNN.load_from_checkpoint(
-        checkpoint_path, ctc=ctc, ytest_i2w=test_ds.i2w, ds_name=ds_name
-    )
+    if ds_name == "aligned":
+        model = LightningE2EModelUnfolding.load_from_checkpoint(
+            checkpoint_path, ctc=ctc, ytest_i2w=test_ds.i2w
+        )
+    else:    
+        model = CTCTrainedCRNN.load_from_checkpoint(
+            checkpoint_path, ctc=ctc, ytest_i2w=test_ds.i2w, ds_name=ds_name
+        )
     model.freeze()
 
     # Test: automatically auto-loads the best weights from the previous run

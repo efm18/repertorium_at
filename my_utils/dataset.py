@@ -34,8 +34,13 @@ class CTCDataset(Dataset):
 
     def __getitem__(self, idx):
         img_path = self.X[idx]
-        x = preprocess_image_from_file(self.X[idx])
-            
+        
+        if self.name == "aligned":
+            unfolding = True
+        else:
+            unfolding = False
+        
+        x = preprocess_image_from_file(self.X[idx], unfolding=unfolding)
         return x, img_path
 
     def get_images_filepaths(
