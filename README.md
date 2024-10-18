@@ -12,7 +12,11 @@ Ensure your data is in `.png` format and saved in the `data` directory within th
 
 ## Usage
 
-Once the data is placed in the corresponding folders, execute the command `.transcribe/sh` with one of the following arguments, depending on the desired task:
+Firstly, you need to execute the following commands in order to build and run the docker (**it is needed an linux/amd64 system with cuda**):
+- `./buil_docker.sh`
+- `./run_docker.sh`
+
+Once the data is placed in the corresponding folders and you are inside the docker container, execute the command `.transcribe/sh` with one of the following arguments, depending on the desired task:
 
 - `./transcribe.sh music` for transcribing only the files in the `Repertorium_Images_music` directory
 - `./transcribe.sh lyrics` for transcribing only the files in the `Repertorium_Images_lyrics` directory
