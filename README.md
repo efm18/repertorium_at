@@ -13,7 +13,7 @@ Ensure your data is in `.png` format and saved in the `data` directory within th
 ## Usage
 
 Firstly, you need to execute the following commands in order to build and run the docker (**it is needed an linux/amd64 system with cuda**):
-- `./buil_docker.sh`
+- `./build_docker.sh`
 - `./run_docker.sh`
 
 Once the data is placed in the corresponding folders and you are inside the docker container, execute the command `.transcribe/sh` with one of the following arguments, depending on the desired task:
