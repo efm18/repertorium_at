@@ -31,3 +31,4 @@ The resulting transcriptions will be saved in the `predictions` directory within
 - `predictions/aligned` for aligned transcriptions
 
 > **Note:** The models are still in development.
+> **This code is part of REPERTORIUM project, funded by the European Union’s Horizon Europe programme under grant agreement No 101095065.**
