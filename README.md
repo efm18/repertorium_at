@@ -1,5 +1,7 @@
 # Automatic Transcription for Repertorium Project
 
+> **This code is part of REPERTORIUM project, funded by the European Union’s Horizon Europe programme under grant agreement No 101095065.**
+
 This repository is designed to perform automatic transcription of the systems from the Repertorium project.
 
 ## Directory Structure
@@ -31,4 +33,3 @@ The resulting transcriptions will be saved in the `predictions` directory within
 - `predictions/aligned` for aligned transcriptions
 
 > **Note:** The models are still in development.
-> **This code is part of REPERTORIUM project, funded by the European Union’s Horizon Europe programme under grant agreement No 101095065.**
